@@ -1,0 +1,35 @@
+# --- Osnovni alati ---
+python-dotenv
+requests
+numpy
+
+# --- RAG & LLM ekosistem (LangChain) ---
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+
+# --- Ollama lokalni LLM adapter (Qwen 2.5) ---
+langchain-ollama
+
+# --- Groq cloud LLM adapter (Llama 70B) ---
+groq
+
+# --- Embedding modeli ---
+sentence-transformers
+
+# --- FAISS vektorska baza ---
+faiss-cpu
+
+# --- PDF loader ---
+pypdf
+
+# --- UI (Streamlit) ---
+streamlit
+
+# --- Web scraping / API helpers (za Wikipedia, StackOverflow, OpenAlex) ---
+beautifulsoup4
+httpx
+
+# --- JSON utils (ako koristiš pydantic modele negde u kodu) ---
+pydantic
