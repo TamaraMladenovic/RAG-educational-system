@@ -16,11 +16,11 @@ load_dotenv(override=True)
 
 
 DEFAULT_LIMITS: Dict[str, int] = {
-    "wikipedia": 3,
+    "gcs": 5, 
     "stackoverflow": 3,
     "openalex": 5,
     "pdf": 20,
-    "gcs": 5, 
+    "wikipedia": 3,    
 }
 
 #Glavni modul za pretragu, koristi query i pretražuje uz pomoć svih klijenata
@@ -43,10 +43,9 @@ def search_everywhere_api(
     effective_limits = {**DEFAULT_LIMITS, **(limits or {})}
 
     loaders: Dict[str, Callable[[], List[Document]]] = {
-        "wikipedia": lambda: load_wikipedia_by_query(
+        "gcs": lambda: load_gcs_results(        
             query,
-            lang=lang,
-            top_k=effective_limits["wikipedia"],
+            top_k=effective_limits["gcs"],
             timeout=timeout,
         ),
         "stackoverflow": lambda: load_stackoverflow_by_query(
@@ -60,16 +59,17 @@ def search_everywhere_api(
             top_k=effective_limits["openalex"],
             timeout=timeout,
         ),
+        "wikipedia": lambda: load_wikipedia_by_query(
+            query,
+            lang=lang,
+            top_k=effective_limits["wikipedia"],
+            timeout=timeout,
+        ),
         "pdf": lambda: search_local_pdfs_by_keywords(
             pdf_dir,
             query,
             page_level=page_level_pdf,
             top_k=effective_limits["pdf"],
-        ),
-        "gcs": lambda: load_gcs_results(        
-            query,
-            top_k=effective_limits["gcs"],
-            timeout=timeout,
         ),
     }
 
