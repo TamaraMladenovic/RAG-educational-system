@@ -52,7 +52,7 @@ def build_prompt(question: str, chunks: List[Dict[str, Any]]) -> str:   #LLM pro
 
         INSTRUCTIONS:
         - Answer the user's question using ONLY the context above.
-        - If context is insufficient, say "Not enough information in retrieved sources."
+        - If context is insufficient, you may use your own knowlegde.
         - Be precise, structured, and concise.
         """
 
