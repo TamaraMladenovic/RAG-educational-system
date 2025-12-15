@@ -52,7 +52,7 @@ def build_prompt(question: str, chunks: List[Dict[str, Any]]) -> str:   #LLM pro
 
         INSTRUCTIONS:
         - Answer the user's question using ONLY the context above.
-        - If context is insufficient, you may use your own knowlegde. 
+        - If context is insufficient, answer with what little context you have. 
         - Just give the answer don't say anything more than needed, and don't say if you got it from context or not.
         - Be precise, structured, and concise.
         """
