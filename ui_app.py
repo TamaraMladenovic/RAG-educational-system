@@ -24,12 +24,6 @@ def main() -> None:
 
     rag = get_rag_pipeline()
 
-    # Sidebar settings (da top_k bude definisan)
-    with st.sidebar:
-        st.header("⚙️ Podešavanja")
-        top_k = st.slider("Broj FAISS rezultata (top_k):", 1, 10, 5)
-
-    # ✅ FORM: Enter submit + dugme submit
     with st.form(key="rag_form", clear_on_submit=False):
         question = st.text_area(
             "Unesite Vaše pitanje (na bilo kom jeziku):",
@@ -44,7 +38,7 @@ def main() -> None:
             return
 
         with st.spinner("Razmišljam..."):
-            result = rag.run(question, top_k=top_k)
+            result = rag.run(question)
 
         # Prikaz glavnog odgovora
         st.subheader("🧠 Odgovor")

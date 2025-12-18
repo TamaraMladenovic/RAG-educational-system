@@ -138,7 +138,7 @@ class RAGPipeline:
 
     # Glavni RAG pipeline
     # ----------------------------------------------------------------------
-    def run(self, query: str, top_k: int = 5) -> Dict:
+    def run(self, query: str, top_k: int = 3) -> Dict:
 
         live_results = self.search_live_sources(query)
 
