@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 from typing import Any, Optional
 
-from groq import Groq
+from groq import Groq, RateLimitError
 
 from .base import LLMAdapter
 
@@ -47,21 +47,36 @@ class GroqLlamaAdapter(LLMAdapter):
 
     def generate(self, prompt: str) -> str:   #Prompt se gleda kao user message, poziva se za RAG pipeline
 
-        completion = self._client.chat.completions.create(
-            model=self.model,
-            temperature=self.temperature,
-            max_tokens=self.max_new_tokens,
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt,
-                }
-            ],
-        )
+        try:
+            completion = self._client.chat.completions.create(
+                model=self.model,
+                temperature=self.temperature,
+                max_tokens=self.max_new_tokens,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt,
+                    }
+                ],
+            )
 
-        msg = completion.choices[0].message
-        content = getattr(msg, "content", None)
-        if content is not None:
-            return content
+            msg = completion.choices[0].message
+            content = getattr(msg, "content", None)
+            if content is not None:
+                return content
 
-        return str(msg)
+            return str(msg)
+
+        except RateLimitError:
+            return (
+                "Privremeno je dostignut limit cloud LLM servisa. "
+                "Molim te pokušaj ponovo za minut ili prebaci aplikaciju u lokalni režim."
+            )
+
+        except Exception as e:
+            # fallback za sve ostalo (network, timeout, itd.)
+            return (
+                "Došlo je do greške pri generisanju odgovora. "
+                "Pokušaj ponovo."
+            )
+

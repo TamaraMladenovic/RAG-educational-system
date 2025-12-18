@@ -158,7 +158,7 @@ class RAGPipeline:
         faiss_results = self.retrieve_context(query, top_k=top_k)
         faiss_context = [doc.text for (doc, dist) in faiss_results]
 
-        final_context = live_context[:5] + faiss_context[:5]
+        final_context = live_context[:2] + faiss_context[:2]
 
         ####### DEBUG ########
         print("\n" + "=" * 60)

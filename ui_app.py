@@ -38,6 +38,12 @@ def main() -> None:
     )
 
     if st.button("Postavite pitanje"):
+        if st.button("Postavi pitanje", disabled=st.session_state.get("busy", False)):
+            st.session_state["busy"] = True
+            try:
+                ...
+            finally:
+                st.session_state["busy"] = False
         if not question.strip():
             st.warning("Unesite pitanje pre nego što pokrenete upit.")
             return
