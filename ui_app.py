@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import streamlit as st
-
 from pipeline.rag_pipeline import RAGPipeline
 
 
@@ -20,25 +19,26 @@ def main() -> None:
     st.title("📚 Edukativni Asistent")
     st.write(
         "Postavite pitanje iz oblasti koju učite, a sistem će koristiti "
-        "informacije sa naučnih stranica i iz LAMS PDF fajlova da odgovori"
+        "informacije sa naučnih stranica i iz LAMS PDF fajlova da odgovori."
     )
 
     rag = get_rag_pipeline()
 
-    # Glavni input
-    question = st.text_area(
-        "Unesite Vaše pitanje (na bilo kom jeziku):",
-        value="",
-        height=100,
-    )
+    # Sidebar settings (da top_k bude definisan)
+    with st.sidebar:
+        st.header("⚙️ Podešavanja")
+        top_k = st.slider("Broj FAISS rezultata (top_k):", 1, 10, 5)
 
-    if st.button("Postavite pitanje"):
-        if st.button("Postavi pitanje", disabled=st.session_state.get("busy", False)):
-            st.session_state["busy"] = True
-            try:
-                ...
-            finally:
-                st.session_state["busy"] = False
+    # ✅ FORM: Enter submit + dugme submit
+    with st.form(key="rag_form", clear_on_submit=False):
+        question = st.text_area(
+            "Unesite Vaše pitanje (na bilo kom jeziku):",
+            value="",
+            height=100,
+        )
+        submit = st.form_submit_button("Postavite pitanje")
+
+    if submit:
         if not question.strip():
             st.warning("Unesite pitanje pre nego što pokrenete upit.")
             return
@@ -48,7 +48,7 @@ def main() -> None:
 
         # Prikaz glavnog odgovora
         st.subheader("🧠 Odgovor")
-        st.write(result["final_answer"])
+        st.write(result.get("final_answer", ""))
 
         # Sekcija sa kontekstom / izvorima
         st.markdown("---")
@@ -76,12 +76,12 @@ def main() -> None:
             else:
                 for ch in retrieved_chunks:
                     st.markdown(
-                        f"**Doc:** `{ch['doc_id']}` | "
-                        f"Source: `{ch['source']}` | "
-                        f"Chunk: `{ch['chunk_id']}` | "
-                        f"Dist: `{ch['distance']:.4f}`"
+                        f"**Doc:** `{ch.get('doc_id')}` | "
+                        f"Source: `{ch.get('source')}` | "
+                        f"Chunk: `{ch.get('chunk_id')}` | "
+                        f"Dist: `{ch.get('distance', 0.0):.4f}`"
                     )
-                    st.write(ch["text"])
+                    st.write(ch.get("text", ""))
                     st.markdown("---")
 
 
