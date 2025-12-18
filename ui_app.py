@@ -25,11 +25,6 @@ def main() -> None:
 
     rag = get_rag_pipeline()
 
-    # Sidebar
-    with st.sidebar:
-        st.header("⚙️ Podešavanja")
-        top_k = st.slider("Broj FAISS rezultata (top_k):", min_value=1, max_value=10, value=5)
-
     # Glavni input
     question = st.text_area(
         "Unesite Vaše pitanje (na bilo kom jeziku):",
