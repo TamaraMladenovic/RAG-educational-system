@@ -19,7 +19,6 @@ DEFAULT_LIMITS: Dict[str, int] = {
     "gcs": 5, 
     "stackoverflow": 3,
     "openalex": 5,
-    "pdf": 20,
     "wikipedia": 3,    
 }
 
@@ -64,12 +63,6 @@ def search_everywhere_api(
             lang=lang,
             top_k=effective_limits["wikipedia"],
             timeout=timeout,
-        ),
-        "pdf": lambda: search_local_pdfs_by_keywords(
-            pdf_dir,
-            query,
-            page_level=page_level_pdf,
-            top_k=effective_limits["pdf"],
         ),
     }
 
