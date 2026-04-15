@@ -1,0 +1,17 @@
+{
+  "app_env": "local",
+  "system": "RAG_local",
+  "n": 50,
+  "avg_ground_truth_similarity": 0.3201,
+  "avg_groundedness_score_0_1_2": 1.12,
+  "fully_grounded_rate(score=2)": 0.52,
+  "no_context_items": 0,
+  "input_path": "evaluation/out/local/results.json",
+  "output_csv": "evaluation/out/local/phase4\\phase4_auto.csv",
+  "input_meta": {
+    "app_env": "local",
+    "run_time": "2026-02-23T01:09:47",
+    "total_questions": 50,
+    "top_k": 5
+  }
+}

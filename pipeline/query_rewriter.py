@@ -1,6 +1,15 @@
 from __future__ import annotations
 from typing import Any
 
+def _llm_call(llm: Any, prompt: str) -> str:
+    if hasattr(llm, "generate") and callable(getattr(llm, "generate")):
+        return llm.generate(prompt) or ""
+    if hasattr(llm, "invoke") and callable(getattr(llm, "invoke")):
+        return llm.invoke(prompt) or ""
+    if callable(llm):
+        return llm(prompt) or ""
+    return ""
+
 #LLM za kreiranje upita na engleskom za klijente za pretraživanje
 def rewrite_query_for_search(llm: Any, question: str) -> str:
 
@@ -37,20 +46,30 @@ def rewrite_query_for_search(llm: Any, question: str) -> str:
         A:
         """.strip()
 
-    raw = llm.generate(prompt)
-    if not raw:  #Ako LLM ne radi, da koristi originalno pitanje
-        return question.strip()
+    raw = _llm_call(llm, prompt).strip()
+    if not raw:
+        return question
 
-    first_line = raw.strip().splitlines()[0].strip()
-    if not first_line:
-        return question.strip()
+    # uzmi samo prvu liniju (LLM ponekad vrati više redova)
+    first = raw.splitlines()[0].strip()
 
-    #Skratiti ako vrati predugačak odgovor
-    parts = first_line.split()
-    if len(parts) > 20:
-        first_line = " ".join(parts[:20])
+    # očisti navodnike/backticks ako ih vrati
+    first = first.strip(' "\'`')
 
+    # ✅ SANITY CHECK 1: prekratko = verovatno besmislen odgovor
+    if len(first) < 3:
+        return question
+
+    # ✅ SANITY CHECK 2: predugačko = skraćujemo na max 12 reči
+    if len(first.split()) > 12:
+        first = " ".join(first.split()[:12])
+
+    # ✅ dodatni guard: ako je LLM vratio isto što i pitanje ali je pitanje predugačko,
+    # makar ga skratimo da pretraga bude stabilnija
+    if first.lower() == question.lower() and len(first.split()) > 12:
+        first = " ".join(first.split()[:12])
     print(f">>> [REWRITE] Q: {question}")
-    print(f">>> [REWRITE] search_query (EN): {first_line}")
+    print(f">>> [REWRITE] search_query (EN): {first}")
 
-    return first_line
+    return first
+

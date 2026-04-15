@@ -1,0 +1,51 @@
+id,question,system,gt_sim,groundedness,support_ratio,has_context
+1,Šta je neuronska mreža?,LLMOnly_cloud,0.1788,0,0.0,0
+2,What is overfitting in machine learning?,LLMOnly_cloud,0.2046,0,0.0,0
+3,Šta znači RAG u kontekstu LLM sistema?,LLMOnly_cloud,0.3788,0,0.0,0
+4,What is an embedding in NLP?,LLMOnly_cloud,0.1318,0,0.0,0
+5,Šta je halucinacija u LLM modelima?,LLMOnly_cloud,0.0915,0,0.0,0
+6,What is FAISS?,LLMOnly_cloud,0.322,0,0.0,0
+7,Šta je cosine similarity?,LLMOnly_cloud,0.1959,0,0.0,0
+8,What is a vector database?,LLMOnly_cloud,0.169,0,0.0,0
+9,Šta je algoritam?,LLMOnly_cloud,0.1765,0,0.0,0
+10,What is Big O notation?,LLMOnly_cloud,0.2009,0,0.0,0
+11,Šta je Newtonov drugi zakon?,LLMOnly_cloud,0.2302,0,0.0,0
+12,What is the derivative of x^2?,LLMOnly_cloud,1.0,0,0.0,0
+13,Šta je integral?,LLMOnly_cloud,0.1441,0,0.0,0
+14,What is SQL?,LLMOnly_cloud,0.3016,0,0.0,0
+15,Šta je primarni ključ u bazi podataka?,LLMOnly_cloud,0.3,0,0.0,0
+16,What is precision in classification?,LLMOnly_cloud,0.2573,0,0.0,0
+17,Šta je recall u klasifikaciji?,LLMOnly_cloud,0.171,0,0.0,0
+18,What is F1-score?,LLMOnly_cloud,0.1432,0,0.0,0
+19,Šta je operativni sistem?,LLMOnly_cloud,0.1571,0,0.0,0
+20,What is RAM memory?,LLMOnly_cloud,0.2745,0,0.0,0
+21,Explain the difference between supervised and unsupervised learning.,LLMOnly_cloud,0.1338,0,0.0,0
+22,Šta je gradijentni spust i čemu služi?,LLMOnly_cloud,0.2208,0,0.0,0
+23,What is the purpose of attention mechanism in transformers?,LLMOnly_cloud,0.271,0,0.0,0
+24,Šta je Bayesova teorema?,LLMOnly_cloud,0.1323,0,0.0,0
+25,What is the time complexity of binary search?,LLMOnly_cloud,0.3289,0,0.0,0
+26,Objasni razliku između TCP i UDP protokola.,LLMOnly_cloud,0.1028,0,0.0,0
+27,What is the fundamental theorem of calculus?,LLMOnly_cloud,0.217,0,0.0,0
+28,Šta je normalizacija baze podataka?,LLMOnly_cloud,0.1399,0,0.0,0
+29,What is cross-entropy loss?,LLMOnly_cloud,0.343,0,0.0,0
+30,Šta je entropija u teoriji informacija?,LLMOnly_cloud,0.1822,0,0.0,0
+31,In which year was the Transformer architecture introduced?,LLMOnly_cloud,1.0,0,0.0,0
+32,Šta predstavlja zakon očuvanja energije?,LLMOnly_cloud,0.3342,0,0.0,0
+33,What is the difference between precision and recall?,LLMOnly_cloud,0.0857,0,0.0,0
+34,Šta je hash funkcija?,LLMOnly_cloud,0.1086,0,0.0,0
+35,What is the Pythagorean theorem?,LLMOnly_cloud,0.2323,0,0.0,0
+36,Which company developed FAISS?,LLMOnly_cloud,0.4898,0,0.0,0
+37,Šta je latentni prostor u dubokom učenju?,LLMOnly_cloud,0.0816,0,0.0,0
+38,What does GPU stand for?,LLMOnly_cloud,1.0,0,0.0,0
+39,Šta je diferencijalna jednačina?,LLMOnly_cloud,0.2811,0,0.0,0
+40,What is the speed of light in vacuum?,LLMOnly_cloud,0.962,0,0.0,0
+41,Who invented the Python programming language?,LLMOnly_cloud,0.3505,0,0.0,0
+42,Šta je matrica?,LLMOnly_cloud,0.26,0,0.0,0
+43,What is the difference between AI and machine learning?,LLMOnly_cloud,0.1697,0,0.0,0
+44,Šta je logaritamska funkcija?,LLMOnly_cloud,0.2211,0,0.0,0
+45,What is quantum computing?,LLMOnly_cloud,0.181,0,0.0,0
+46,Šta je diferencija između IPv4 i IPv6?,LLMOnly_cloud,0.0882,0,0.0,0
+47,What is backpropagation?,LLMOnly_cloud,0.1518,0,0.0,0
+48,Šta je heuristika?,LLMOnly_cloud,0.2683,0,0.0,0
+49,What is the difference between RAM and ROM?,LLMOnly_cloud,0.1779,0,0.0,0
+50,Šta je LLM (Large Language Model)?,LLMOnly_cloud,0.2357,0,0.0,0

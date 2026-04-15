@@ -5,7 +5,7 @@ import hashlib
 from typing import List
 from bs4 import BeautifulSoup
 
-MIN_CHARS = 50
+MIN_CHARS = 400
 
 UA_JSON = {"User-Agent": "RAG-Search/0.2", "Accept": "application/json, */*"}
 UA_HTML = {"User-Agent": "RAG-Search/0.2", "Accept": "text/html, */*"}
@@ -42,4 +42,4 @@ def hash_text(s: str) -> str:
 def tokenize_query(q: str) -> List[str]:
     q = (q or "").lower()
     q = re.sub(r"[^a-z0-9A-ZčćžšđČĆŽŠĐ_\-\s]", " ", q)
-    return [p for p in (w.strip() for w in q.split()) if p]
+    return [word.strip() for word in q.split() if word.strip()]

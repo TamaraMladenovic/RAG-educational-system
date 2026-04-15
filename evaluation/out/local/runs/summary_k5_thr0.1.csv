@@ -1,0 +1,2 @@
+app_env,k,threshold,n_questions,precision_at_k,recall_at_k,mrr
+local,5,0.1,50,0.23600000000000002,0.52,0.39966666666666667

@@ -1,0 +1,5 @@
+label,system,n,avg_ground_truth_similarity,avg_groundedness_score_0_1_2,fully_grounded_rate_score_2,no_context_items,summary_path
+RAG_local,RAG_local,50,0.3201,1.12,0.52,0,evaluation/out/local/phase4\phase4_summary.json
+LLMOnly_local,LLMOnly_local,50,0.2586,0.0,0.0,50,evaluation/out/local/phase4\phase4_LLMOnly_local_summary.json
+RAG_cloud,RAG_cloud,50,0.4389,0.8,0.38,0,evaluation/out/cloud/phase4\phase4_summary.json
+LLMOnly_cloud,LLMOnly_cloud,50,0.2756,0.0,0.0,50,evaluation/out/cloud/phase4\phase4_LLMOnly_cloud_summary.json

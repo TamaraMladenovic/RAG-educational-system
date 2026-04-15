@@ -1,0 +1,3 @@
+label,system,n,avg_ground_truth_similarity,avg_groundedness_score_0_1_2,fully_grounded_rate_score_2,no_context_items,summary_path
+RAG_local,LLMOnly_local,50,0.2586,0.0,0.0,50,evaluation/out/local/phase4\phase4_LLMOnly_local_summary.json
+RAG_cloud,ChatGPT,50,0.8454,0.0,0.0,50,evaluation/out/cloud/phase4\phase4_ChatGPT_summary.json

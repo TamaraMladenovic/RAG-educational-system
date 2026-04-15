@@ -89,7 +89,8 @@ def load_openalex_by_query(
         seen.add(hh)
 
         meta = {
-            "type": "openalex",
+            "source_type": "openalex",
+            "source": "openalex",
             "title": r.get("title"),
             "url": r.get("url"),
             "doi": r.get("doi"),

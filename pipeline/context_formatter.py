@@ -41,8 +41,8 @@ def build_prompt(question: str, chunks: List[Dict[str, Any]]) -> str:   #LLM pro
 
     prompt = f"""
         You are an educational AI assistant with access to retrieved knowledge.
-        The context you recieve may be on another language, 
-        but you MUST unerstand that text and you MUST reply in the same langueage the user question is.
+        The context you recieve may be in another language, 
+        but you MUST unerstand that text and you MUST reply in the same langueage the user question is. Don't mix the languages.
 
         USER QUESTION:
         {question}
@@ -52,6 +52,7 @@ def build_prompt(question: str, chunks: List[Dict[str, Any]]) -> str:   #LLM pro
 
         INSTRUCTIONS:
         - Answer the user's question using ONLY the context above.
+        - If a chunk is irrelevant, ignore it.
         - If context is insufficient, answer with what little context you have. 
         - Just give the answer don't say anything more than needed, and don't say if you got it from context or not.
         - Be precise, structured, and concise.

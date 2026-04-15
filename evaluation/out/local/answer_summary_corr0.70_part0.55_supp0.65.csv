@@ -1,0 +1,2 @@
+app_env,n_questions,correct_threshold,partial_threshold,supported_threshold,correct_rate,partial_rate,incorrect_rate,avg_answer_gold_similarity,avg_unsupported_sentence_ratio,items_csv
+local,50,0.7,0.55,0.65,0.58,0.24,0.18,0.7123,0.4761,answer_items_corr0.70_part0.55_supp0.65.csv

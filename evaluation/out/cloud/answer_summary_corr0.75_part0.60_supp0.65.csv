@@ -1,0 +1,2 @@
+app_env,n_questions,correct_threshold,partial_threshold,supported_threshold,correct_rate,partial_rate,incorrect_rate,avg_answer_gold_similarity,avg_unsupported_sentence_ratio,items_csv
+cloud,50,0.75,0.6,0.65,0.44,0.28,0.28,0.6849,0.45,answer_items_corr0.75_part0.60_supp0.65.csv

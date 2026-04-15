@@ -175,7 +175,8 @@ def load_wikipedia_by_query(
             seen.add(hh)
 
         meta = {
-            "type": "wikipedia",
+            "source_type": "wikipedia",
+            "source": "wikipedia",
             "title": det.get("title") or h.get("title"),
             "url": det.get("fullurl")
             or (

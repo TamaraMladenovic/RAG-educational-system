@@ -1,0 +1,17 @@
+{
+  "app_env": "cloud",
+  "system": "RAG_cloud",
+  "n": 50,
+  "avg_ground_truth_similarity": 0.4389,
+  "avg_groundedness_score_0_1_2": 0.8,
+  "fully_grounded_rate(score=2)": 0.38,
+  "no_context_items": 0,
+  "input_path": "evaluation/out/cloud/results.json",
+  "output_csv": "evaluation/out/cloud/phase4\\phase4_auto.csv",
+  "input_meta": {
+    "app_env": "cloud",
+    "run_time": "2026-03-05T22:06:31",
+    "total_questions": 50,
+    "top_k": 5
+  }
+}

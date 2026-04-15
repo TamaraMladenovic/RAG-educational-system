@@ -45,9 +45,10 @@ def main() -> None:
         rag.ingest(
             text=doc.page_content,
             metadata={
-                "source": "pdf",
+                "source_type": "pdf",
+                "source": source_path or doc_id,
                 "doc_id": doc_id,
-                "page": doc.metadata.get("page"),
+                "page": doc.metadata.get("page")
             },
             save=False,   # čuvamo FAISS samo jednom
         )

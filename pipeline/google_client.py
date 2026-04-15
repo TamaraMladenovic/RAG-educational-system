@@ -55,6 +55,7 @@ def load_gcs_results(
 
         meta = {
             "source_type": "gcs",
+            "source": "gcs",
             "title": title,
             "url": link,
         }

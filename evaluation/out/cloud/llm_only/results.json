@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "app_env": "cloud",
+    "run_time": "2026-03-06T00:04:49",
+    "total_questions": 50,
+    "top_k": 5,
+    "baseline": "llm_only"
+  },
+  "items": [
+    {
+      "id": 1,
+      "question": "Šta je neuronska mreža?",
+      "gold_answer": "Neuronska mreža je model mašinskog učenja inspirisan biološkim neuronima koji se sastoji od slojeva međusobno povezanih čvorova.",
+      "evidence": "Standard ML definition - Google Search",
+      "model_answer": "Neuronska mreža je skup neuronskih veza između neurona u mozgu koji zajedno funkcionišu kao jedan sistem. Ove mreže omogućavaju komunikaciju i koordinaciju između različitih delova mozga i omogućavaju obavljanje kompleksnih funkcija kao što su učenje, pamćenje, percepcija i kontrola pokreta.\n\nU širem smislu, neuronska mreža se može odnositi na umjetne neuronske mreže, koje su matematički modeli koji se koriste u računarstvu za simulaciju ponašanja ljudskog mozga. Ove mreže se koriste u oblasti umjetne inteligencije za različite zadatke kao što su prepoznavanje slika, klasifikacija podataka i predviđanje.\n\nU svakom slučaju, neuronska mreža je složen sistem koji se sastoji od velikog broja međusobno povezanih elemenata koji zajedno funkcionišu kao jedan sistem.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 2,
+      "question": "What is overfitting in machine learning?",
+      "gold_answer": "Overfitting occurs when a model learns training data too closely and fails to generalize to unseen data.",
+      "evidence": "ML overfitting definition - Google Search",
+      "model_answer": "Overfitting in machine learning occurs when a model is too complex and learns the noise in the training data, rather than the underlying patterns. As a result, the model performs well on the training data but poorly on new, unseen data. This happens because the model has become too specialized to the training data and has not generalized well to other data. Overfitting can be caused by factors such as having too many features, too few training examples, or using a model that is too complex for the problem at hand. Techniques such as regularization, early stopping, and cross-validation can be used to prevent or mitigate overfitting.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 3,
+      "question": "Šta znači RAG u kontekstu LLM sistema?",
+      "gold_answer": "RAG označava Retrieval-Augmented Generation, pristup koji kombinuje pretraživanje dokumenata i generisanje odgovora pomoću LLM-a.",
+      "evidence": "RAG architecture explanation - Google Search",
+      "model_answer": "RAG u kontekstu LLM (Large Language Model) sistema znači \"Retrieval-Augmented Generation\". To je tehnika koja se koristi za poboljšanje performansi velikih jezičnih modela tako što im omogućava da pristupe i koriste vanjske informacije iz baze podataka ili drugih izvora tokom procesa generiranja teksta.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 4,
+      "question": "What is an embedding in NLP?",
+      "gold_answer": "An embedding is a numerical vector representation of text that captures semantic meaning.",
+      "evidence": "NLP embeddings explanation - Google Search",
+      "model_answer": "In NLP (Natural Language Processing), an embedding is a technique used to represent words, phrases, or documents as dense vectors in a high-dimensional space. The goal of an embedding is to capture the semantic meaning and relationships between words, such that similar words are mapped to nearby points in the vector space.\n\nEmbeddings are typically learned from large amounts of text data using neural network-based algorithms, such as Word2Vec or GloVe. These algorithms aim to preserve the semantic relationships between words, so that:\n\n* Synonyms are close together\n* Antonyms are far apart\n* Words with similar meanings are nearby\n* Words with different meanings are distant\n\nEmbeddings have become a fundamental component in many NLP tasks, including text classification, sentiment analysis, language modeling, and machine translation. They allow NLP models to capture nuanced word meanings and relationships, leading to improved performance and more accurate results.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 5,
+      "question": "Šta je halucinacija u LLM modelima?",
+      "gold_answer": "Halucinacija je generisanje netačnih ili izmišljenih informacija od strane modela.",
+      "evidence": "LLM hallucination definition - Google Search",
+      "model_answer": "Halucinacija u LLM (Large Language Model) modelima se odnosi na pojavu kada model generiše ili predlaže informacije koje nisu podržane ili prisutne u ulaznim podacima ili kontekstu. Ovo znači da model \"izmišlja\" ili stvara informacije koje nisu stvarne ili potvrđene, što može biti problematično u situacijama gdje se traži preciznost i pouzdanoća informacija.\n\nHalucinacije u LLM modelima mogu nastati zbog različitih razloga, kao što su:\n\n1. **Nedostatak konteksta**: Model nije imao dovoljno konteksta ili informacija da bi pravilno razumio ili odgovorio na upit.\n2. **Prekompleksnost modela**: Modeli koji su prekompleksni ili imaju previše parametara mogu generirati halucinacije kao rezultat svoje sopstvene kompleksnosti.\n3. **Nedostatak treninga**: Model nije bio dovoljno treniran na raznolikim podacima ili scenarijima, što može dovesti do generiranja halucinacija u nepoznatim situacijama.\n4. **Zloupotreba ili manipulacija**: Model može biti namjerno dizajniran ili manipuliran da generiše halucinacije za određene svrhe, kao što je stvaranje lažnih vijesti ili dezinformacija.\n\nHalucinacije u LLM modelima predstavljaju značajan izazov u razvoju pouzdanih i preciznih jezičkih modela, jer one mogu imati negativne posljedice u različitim primjenama, kao što su automatsko generiranje sadržaja, prevod, ili razgovor s korisnicima.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 6,
+      "question": "What is FAISS?",
+      "gold_answer": "FAISS is an open-source library developed by Meta AI for efficient similarity search and clustering of high-dimensional vectors.",
+      "evidence": "FAISS official documentation",
+      "model_answer": "FAISS (Facebook AI Similarity Search) is an open-source library for efficient similarity search and clustering of dense vectors. It was developed by Facebook AI Research (FAIR) and is designed to provide fast and accurate similarity search and clustering capabilities for large-scale datasets. FAISS supports a variety of indexing techniques and is widely used in applications such as image and video search, natural language processing, and recommender systems.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 7,
+      "question": "Šta je cosine similarity?",
+      "gold_answer": "Cosine similarity je mera sličnosti između dva vektora zasnovana na kosinusu ugla između njih.",
+      "evidence": "Cosine similarity definition - Google Search",
+      "model_answer": "Kosinus sličnost (cosine similarity) je mera sličnosti između dva vektora u prostoru visoke dimenzije. Ona se koristi za izračunavanje stepena sličnosti između dva vektora na osnovu kuta između njih.\n\nKosinus sličnost se izračunava kao kosinus kuta između dva vektora, i ona se kreće u rasponu od -1 do 1. Vrednost 1 označava potpunu sličnost, dok vrednost -1 označava potpunu nesličnost. Vrednost 0 označava da su vektori ortogonalni, tj. da nema sličnosti između njih.\n\nKosinus sličnost se koristi u raznim oblastima, kao što su:\n\n* Obrada prirodnog jezika (NLP)\n* Pretraga informacija\n* Analiza podataka\n* Mašinsko učenje\n\nOna je posebno korisna kada se radi sa tekstualnim podacima, jer omogućava izračunavanje sličnosti između dva teksta na osnovu njihovih vektorskih reprezentacija.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 8,
+      "question": "What is a vector database?",
+      "gold_answer": "A vector database stores and retrieves data in the form of vector embeddings for similarity search.",
+      "evidence": "Vector database definition - Google Search",
+      "model_answer": "A vector database is a type of database that is specifically designed to store, index, and manage vector embeddings, which are high-dimensional vector representations of data such as images, text, or audio. These databases are optimized for similarity searches, nearest neighbor searches, and other operations that involve vector-based data.\n\nVector databases are often used in applications such as:\n\n1. Image and video search\n2. Natural language processing (NLP) and text search\n3. Recommendation systems\n4. Facial recognition\n5. Autonomous vehicles\n\nThey provide efficient and scalable ways to store and query large amounts of vector data, allowing for fast and accurate similarity searches and other vector-based operations.\n\nExamples of vector databases include Amazon SageMaker, Pinecone, Weaviate, and Faiss, among others.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 9,
+      "question": "Šta je algoritam?",
+      "gold_answer": "Algoritam je konačan skup precizno definisanih koraka za rešavanje problema.",
+      "evidence": "Algorithm definition - Google Search",
+      "model_answer": "Algoritam je sistematski pristup ili skup koraka koji se izvršavaju u određenom redosledu kako bi se rešio određeni problem ili izvršio određeni zadatak. Oni se koriste u računarstvu, ali i u drugim oblastima, kao što su matematika, logika i inženjerstvo. Algoritmi mogu biti prikazani pomoću različitih tehnika, kao što su flowcharti, pseudokod ili programski jezici. Oni omogućavaju efikasan i sistematski način rešavanja problema, često koristeći minimalne resurse.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 10,
+      "question": "What is Big O notation?",
+      "gold_answer": "Big O notation describes the time or space complexity of an algorithm in the worst case.",
+      "evidence": "Big O explanation - Google Search",
+      "model_answer": "Big O notation is a mathematical notation that describes the complexity of an algorithm, which is the amount of time or space it requires as the size of the input increases. It's usually expressed as a function of the input size, typically represented as 'n', and it gives an upper bound on the number of steps an algorithm takes to complete. Informally, it's a way to measure how efficient an algorithm is. For example, an algorithm with a time complexity of O(n) will take twice as long to complete if the input size doubles, while an algorithm with a time complexity of O(n^2) will take four times as long.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 11,
+      "question": "Šta je Newtonov drugi zakon?",
+      "gold_answer": "Newtonov drugi zakon kaže da je sila jednaka proizvodu mase i ubrzanja (F = ma).",
+      "evidence": "Newton second law - Google Search",
+      "model_answer": "Newtonov drugi zakon, također poznat kao zakon ubrzanja, kaže da sila (F) koja deluje na objekat je jednaka masi (m) objekta pomnoženoj sa njegovom ubrzanjem (a). Matematički, to se može izraziti kao:\n\nF = m * a\n\nOvaj zakon opisuje odnos između sile i kretanja objekta, i važan je koncept u fizici i inženjerstvu.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 12,
+      "question": "What is the derivative of x^2?",
+      "gold_answer": "The derivative of x^2 is 2x.",
+      "evidence": "Basic calculus rule",
+      "model_answer": "The derivative of x^2 is 2x.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 13,
+      "question": "Šta je integral?",
+      "gold_answer": "Integral predstavlja površinu ispod krive funkcije.",
+      "evidence": "Integral definition - Google Search",
+      "model_answer": "Integral je matematička operacija koja se koristi za izračunavanje površine ispod krive ili zapremine tela. Postoje dva glavna tipa integrala: određeni integral i neodređeni integral.\n\nOdređeni integral se koristi za izračunavanje površine ispod krive ili zapremine tela između dve tačke, i označava se sa ∫[a, b] f(x) dx.\n\nNeodređeni integral se koristi za izračunavanje funkcije čiji je izvod dat, i označava se sa ∫ f(x) dx.\n\nIntegral je važan koncept u matematici i ima širok spektar primena u fizici, inženjerstvu, ekonomiji i drugim oblastima.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 14,
+      "question": "What is SQL?",
+      "gold_answer": "SQL is a language used for managing and querying relational databases.",
+      "evidence": "SQL definition - Google Search",
+      "model_answer": "SQL (Structured Query Language) is a programming language designed for managing and manipulating data stored in relational database management systems (RDBMS). It is used to perform various operations, such as creating and modifying database structures, inserting, updating, and deleting data, as well as querying and retrieving specific data from the database.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 15,
+      "question": "Šta je primarni ključ u bazi podataka?",
+      "gold_answer": "Primarni ključ je atribut koji jedinstveno identifikuje svaki zapis u tabeli.",
+      "evidence": "Primary key definition - Google Search",
+      "model_answer": "Primarni ključ u bazi podataka je jedinstveni identifikator koji se koristi za razlikovanje svakog reda u tabeli. On mora biti jedinstven i ne može biti null. Primarni ključ služi kao referentni ključ za ostale tabele u bazi podataka i omogućava učinkovito pretraživanje, ažuriranje i brisanje podataka.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 16,
+      "question": "What is precision in classification?",
+      "gold_answer": "Precision is the ratio of true positive predictions to all positive predictions.",
+      "evidence": "Precision metric definition",
+      "model_answer": "In classification, precision is the ratio of true positives (correctly predicted instances) to the sum of true positives and false positives (incorrectly predicted instances). It measures the accuracy of the positive predictions made by a model.\n\nPrecision = True Positives / (True Positives + False Positives)\n\nIn simpler terms, precision answers the question: \"Out of all the instances that were predicted to be positive, how many were actually positive?\" A high precision indicates that most of the positive predictions were correct.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 17,
+      "question": "Šta je recall u klasifikaciji?",
+      "gold_answer": "Recall je odnos tačno pozitivnih predikcija i svih stvarno pozitivnih primera.",
+      "evidence": "Recall definition",
+      "model_answer": "Recall u klasifikaciji je mera koja pokazuje koliko dobro model prepoznaje pozitivne primere. To je odnos između broja tačno prepoznatih pozitivnih primera i ukupnog broja pozitivnih primera.\n\nMatematički, recall se izračunava kao:\n\nRecall = TP / (TP + FN)\n\ngde je TP broj tačno prepoznatih pozitivnih primera (true positives), a FN broj pozitivnih primera koji nisu prepoznati (false negatives).\n\nNa primer, ako imamo model koji klasifikuje ljudsku aktivnost kao \"šetač\" ili \"ne šetač\", recall bi bio mera koliko dobro model prepoznaje one koji zaista šetaju. Ako model prepoznaje 80% ljudi koji šetaju, ali propušta 20%, recall bi bio 0,8 (ili 80%).",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 18,
+      "question": "What is F1-score?",
+      "gold_answer": "F1-score is the harmonic mean of precision and recall.",
+      "evidence": "F1 score definition",
+      "model_answer": "The F1-score is a measure of a model's accuracy in classification problems, particularly in cases where there are unequal numbers of positive and negative classes. It is the harmonic mean of precision and recall.\n\nPrecision is the ratio of true positives to the sum of true positives and false positives.\nRecall is the ratio of true positives to the sum of true positives and false negatives.\n\nThe F1-score is calculated as: F1 = 2 * (precision * recall) / (precision + recall)\n\nIt provides a balanced measure of both precision and recall, and is often used to evaluate the performance of classification models, especially when the classes are imbalanced. A higher F1-score indicates better performance.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 19,
+      "question": "Šta je operativni sistem?",
+      "gold_answer": "Operativni sistem je softver koji upravlja hardverskim resursima i omogućava izvršavanje programa.",
+      "evidence": "Operating system definition",
+      "model_answer": "Operativni sistem je softverski sistem koji upravlja hardverskim resursima računara i pruža osnovne usluge za izvršavanje programa. On omogućava komunikaciju između hardvera i softvera, upravlja memorijom, ulazno-izlaznim operacijama, sigurnošću i drugim osnovnim funkcijama računara.\n\nOperativni sistem obavlja sledeće funkcije:\n\n* Upravljanje memorijom: alokacija i dealokacija memorije za programe\n* Upravljanje procesorom: raspoređivanje procesora za izvršavanje programa\n* Upravljanje ulazno-izlaznim operacijama: upravljanje ulaznim i izlaznim uređajima, kao što su tastatura, miš, monitor i printer\n* Upravljanje datotekama: čuvanje i učitanje datoteka sa hard diska ili drugih uređaja za skladištenje\n* Sigurnost: zaštita računara od neovlašćenog pristupa i štete\n* Upravljanje mrežom: upravljanje mrežnim komunikacijama i vezama\n\nNeki od najčešćih operativnih sistema su Windows, macOS, Linux i Android. Svaki operativni sistem ima svoje karakteristike, prednosti i mane, i korisnici mogu izabrati koji će operativni sistem koristiti u zavisnosti od svojih potreba i preferencija.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 20,
+      "question": "What is RAM memory?",
+      "gold_answer": "RAM is volatile memory used to temporarily store data during program execution.",
+      "evidence": "RAM definition",
+      "model_answer": "RAM (Random Access Memory) is a type of computer memory that temporarily stores data and applications while a computer is running. It allows the computer's processor to access and manipulate data quickly, enabling tasks such as running programs, browsing the internet, and editing documents. The data stored in RAM is volatile, meaning it is lost when the computer is powered off.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 21,
+      "question": "Explain the difference between supervised and unsupervised learning.",
+      "gold_answer": "Supervised learning uses labeled data for training, while unsupervised learning works with unlabeled data to discover patterns.",
+      "evidence": "Standard ML definitions - Google Search",
+      "model_answer": "The main difference between supervised and unsupervised learning is the presence or absence of labeled data.\n\nSupervised learning involves training a model on labeled data, where the correct output is already known. The model learns to map inputs to outputs based on the labeled examples, and the goal is to make predictions on new, unseen data. The model is \"supervised\" in the sense that it is guided by the labeled data to learn the relationship between inputs and outputs.\n\nUnsupervised learning, on the other hand, involves training a model on unlabeled data, where the model must find patterns, relationships, or structure in the data without any prior knowledge of the correct output. The model is not \"supervised\" in the sense that it must discover the underlying structure of the data on its own.\n\nTo illustrate the difference, consider the following examples:\n\n* Supervised learning: Image classification, where a model is trained on labeled images (e.g., \"cat\" or \"dog\") to predict the correct label for new images.\n* Unsupervised learning: Clustering, where a model is trained on unlabeled data (e.g., customer purchase history) to group similar customers together based on their buying behavior.\n\nIn summary, supervised learning involves learning from labeled data, while unsupervised learning involves discovering patterns and relationships in unlabeled data.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 22,
+      "question": "Šta je gradijentni spust i čemu služi?",
+      "gold_answer": "Gradijentni spust je optimizacioni algoritam koji minimizuje funkciju gubitka iterativnim pomeranjem u smeru negativnog gradijenta.",
+      "evidence": "Gradient descent definition - Google Search",
+      "model_answer": "Gradijentni spust (eng. Gradient Descent) je algoritam koji se koristi u mašinskom učenju za minimizaciju funkcije greške između predviđenih i stvarnih izlaznih vrednosti. On služi za prilagodavanje parametara modela tako da se smanji razlika između predviđenih i stvarnih vrednosti.\n\nGradijentni spust radi tako što iterativno ažurira parametre modela u pravcu negativnog gradijenta funkcije greške. Time se postiže minimizacija funkcije greške i poboljšanje performansi modela.\n\nGradijentni spust se često koristi u različitim oblastima mašinskog učenja, kao što su:\n\n* Linearna regresija\n* Logistička regresija\n* Neuronske mreže\n* Duboko učenje\n\nU svim ovim slučajevima, gradijentni spust služi za prilagodavanje parametara modela tako da se postigne najbolji mogući rezultat.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of attention mechanism in transformers?",
+      "gold_answer": "The attention mechanism allows the model to weigh the importance of different words in the input sequence when generating output.",
+      "evidence": "Transformer architecture explanation",
+      "model_answer": "The purpose of the attention mechanism in transformers is to allow the model to focus on specific parts of the input sequence when generating output, rather than treating all parts of the sequence equally. This is done by weighing the importance of different input elements relative to each other, and using these weights to compute a weighted sum of the input elements. The attention mechanism enables the model to capture long-range dependencies and contextual relationships in the input sequence, and to generate more accurate and relevant output.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 24,
+      "question": "Šta je Bayesova teorema?",
+      "gold_answer": "Bayesova teorema opisuje verovatnoću događaja na osnovu prethodnog znanja o uslovima povezanim sa tim događajem.",
+      "evidence": "Bayes theorem definition",
+      "model_answer": "Bayesova teorema je matematička teorema koja opisuje kako ažurirati verovatnoću hipoteze na osnovu novih podataka. Imenuje se po engleskom matematičaru Tomasu Bayesu, koji ju je prvi put opisao u 18. veku.\n\nBayesova teorema se koristi za izračunavanje uslovljene verovatnoće, tj. verovatnoće da će se dogoditi određeni događaj A, pod uslovom da se dogodio neki drugi događaj B. Teorema se može izraziti sledećom jednačinom:\n\nP(A|B) = P(B|A) \\* P(A) / P(B)\n\ngde:\n\n* P(A|B) je uslovljena verovatnoća događaja A, pod uslovom da se dogodio događaj B\n* P(B|A) je uslovljena verovatnoća događaja B, pod uslovom da se dogodio događaj A\n* P(A) je apriori verovatnoća događaja A\n* P(B) je apriori verovatnoća događaja B\n\nBayesova teorema se koristi u mnogim oblastima, kao što su statistika, mašinsko učenje, ekonomija, medicina i drugim, za ažuriranje naših verovatnoća i donošenje odluka na osnovu novih podataka.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 25,
+      "question": "What is the time complexity of binary search?",
+      "gold_answer": "The time complexity of binary search is O(log n).",
+      "evidence": "Binary search complexity definition",
+      "model_answer": "The time complexity of binary search is O(log n), where n is the number of elements in the search space. This is because with each comparison, the search space is roughly halved, resulting in a logarithmic number of steps to find the target element.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 26,
+      "question": "Objasni razliku između TCP i UDP protokola.",
+      "gold_answer": "TCP je pouzdan, konekcioni protokol koji garantuje isporuku podataka, dok je UDP nepouzdan i bez konekcije.",
+      "evidence": "TCP vs UDP explanation",
+      "model_answer": "TCP (Transmission Control Protocol) i UDP (User Datagram Protocol) su dva osnovna protokola koji se koriste za prijenos podataka preko Interneta. Glavne razlike između njih su:\n\n1. **Osiguranost prijenosa**: TCP osigurava pouzdani i siguran prijenos podataka, što znači da će podaci biti isporučeni u istom stanju u kojem su poslani. UDP, s druge strane, ne osigurava pouzdani prijenos, što znači da podaci mogu biti izgubljeni ili poremećeni tijekom prijenosa.\n\n2. **Potvrda prijema**: TCP zahtijeva potvrdu prijema podataka od strane primaoca, što znači da će posiljatelj čekati potvrdu prijema prije nego što će nastaviti slati nove podatke. UDP ne zahtijeva potvrdu prijema, što znači da će posiljatelj nastaviti slati nove podatke bez obzira na to da li su prethodni podaci primljeni ili ne.\n\n3. **Urednost podataka**: TCP osigurava da će podaci biti isporučeni u istom redosledu u kojem su poslani. UDP ne osigurava urednost podataka, što znači da podaci mogu biti isporučeni u drugom redosledu nego što su poslani.\n\n4. **Brzina prijenosa**: UDP je općenito brži od TCP-a jer ne zahtijeva potvrdu prijema i ne osigurava pouzdani prijenos. TCP, s druge strane, je sporiji jer zahtijeva potvrdu prijema i osigurava pouzdani prijenos.\n\n5. **Korištenje**: TCP se koristi za aplikacije koje zahtijevaju pouzdani prijenos podataka, kao što su prenos datoteka, e-pošta i web stranice. UDP se koristi za aplikacije koje zahtijevaju brzi prijenos podataka, kao što su video i audio strujanje, igre",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 27,
+      "question": "What is the fundamental theorem of calculus?",
+      "gold_answer": "The fundamental theorem of calculus links differentiation and integration, stating that integration can be reversed by differentiation.",
+      "evidence": "Fundamental theorem definition",
+      "model_answer": "The Fundamental Theorem of Calculus (FTC) is a theorem that connects the two main concepts of calculus: differentiation and integration. It states that differentiation and integration are inverse processes. \n\nThe FTC has two parts:\n\n1. The First Part (or Part 1) of the FTC states that if a function f(x) is continuous on the interval [a, b], then the function F(x) defined by the definite integral of f(x) from a to x is an antiderivative of f(x). In other words, if F(x) = ∫[a, x] f(t) dt, then F'(x) = f(x).\n\n2. The Second Part (or Part 2) of the FTC states that if a function f(x) is continuous on the interval [a, b] and F(x) is an antiderivative of f(x), then the definite integral of f(x) from a to b can be calculated as F(b) - F(a). In other words, ∫[a, b] f(x) dx = F(b) - F(a), where F(x) is an antiderivative of f(x).\n\nIn essence, the Fundamental Theorem of Calculus shows that the process of finding the definite integral of a function (integration) can be reversed by finding the antiderivative of the function (differentiation), and vice versa.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 28,
+      "question": "Šta je normalizacija baze podataka?",
+      "gold_answer": "Normalizacija je proces organizovanja podataka u bazama radi smanjenja redundanse i poboljšanja integriteta.",
+      "evidence": "Database normalization definition",
+      "model_answer": "Normalizacija baze podataka je proces koji se koristi za organizaciju podataka u bazi podataka na način da se izbegavaju nepotrebne ponavljanja i da se olakša održavanje i ažuriranje podataka.\n\nNormalizacija baze podataka obuhvata nekoliko koraka, uključujući:\n\n1. Identifikaciju entiteta i atributa: Identifikacija entiteta (npr. korisnici, proizvodi, narudžbe) i atributa (npr. ime, prezime, adresa) koji će biti smešteni u bazu podataka.\n2. Kreiranje tabela: Kreiranje tabela za svaki entitet, sa atributima kao kolonama.\n3. Definisanje ključeva: Definisanje primarnih ključeva (koji jedinstveno identifikuju svaki red u tabeli) i stranih ključeva (koji povezuju tabele).\n4. Normalizacija tabela: Primena normalizacijskih pravila (npr. prvog, drugog, trećeg normalnog oblika) da bi se izbegli nepotrebni ponavljanja i da se olakša održavanje podataka.\n\nCilj normalizacije baze podataka je da se postigne sledeće:\n\n* Izbegavanje nepotrebne redundancije (ponavljanja) podataka\n* Olakšanje održavanja i ažuriranja podataka\n* Poboljšanje integriteta podataka\n* Smanjenje rizika od grešaka i inconsistenata u podacima\n\nNormalizacija baze podataka je važan korak u dizajnu baze podataka, jer omogućava efikasno i efektivno upravljanje podacima.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 29,
+      "question": "What is cross-entropy loss?",
+      "gold_answer": "Cross-entropy loss measures the difference between predicted probability distribution and the true distribution.",
+      "evidence": "Cross-entropy definition",
+      "model_answer": "Cross-entropy loss is a measure of the difference between the predicted probabilities and the true labels in a classification problem, often used as a loss function in machine learning models, particularly in neural networks. It quantifies the amount of uncertainty or \"entropy\" between the predicted probabilities and the true distribution of the labels. The goal of the model is to minimize the cross-entropy loss, which means it is trying to make its predictions as close as possible to the true labels.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 30,
+      "question": "Šta je entropija u teoriji informacija?",
+      "gold_answer": "Entropija meri količinu nesigurnosti ili informacione sadržine u poruci.",
+      "evidence": "Information theory entropy definition",
+      "model_answer": "Entropija u teoriji informacija predstavlja meru nepredvidljivosti ili slučajnosti nekog događaja ili poruke. Ona se koristi za opisivanje količine informacije koja se nalazi u poruci ili sistemu. Što je veća entropija, to je manja šansa da se poruka ili događaj mogu predvideti ili komprimirati. Entropija se izražava u bitima i koristi se u raznim oblastima, kao što su šifrovanje, kompresija podataka i analiza signala.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 31,
+      "question": "In which year was the Transformer architecture introduced?",
+      "gold_answer": "The Transformer architecture was introduced in 2017.",
+      "evidence": "Attention Is All You Need paper (2017)",
+      "model_answer": "The Transformer architecture was introduced in 2017.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 32,
+      "question": "Šta predstavlja zakon očuvanja energije?",
+      "gold_answer": "Zakon očuvanja energije kaže da energija ne može biti stvorena niti uništena, već samo transformisana.",
+      "evidence": "Law of conservation of energy definition",
+      "model_answer": "Zakon očuvanja energije predstavlja fizikalni princip koji kaže da ukupna energija zatvorenog sistema ostaje konstantna tokom vremena, bez obzira na promene koje se dešavaju unutar sistema. Ova energija se može pretvarati iz jedne forme u drugu, ali ukupna količina energije u sistemu ostaje nepromenjena.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 33,
+      "question": "What is the difference between precision and recall?",
+      "gold_answer": "Precision measures correctness of positive predictions, while recall measures coverage of actual positives.",
+      "evidence": "Precision vs recall definition",
+      "model_answer": "Precision and recall are two fundamental concepts in evaluation metrics, particularly in the context of classification problems in machine learning and data analysis.\n\nPrecision is the ratio of true positives (correctly predicted instances) to the sum of true positives and false positives (incorrectly predicted instances). It measures the accuracy of the positive predictions made by a model. In other words, precision answers the question: \"Out of all the instances that were predicted to be positive, how many were actually positive?\"\n\nRecall, on the other hand, is the ratio of true positives to the sum of true positives and false negatives (missed instances). It measures the ability of a model to detect all instances of a particular class. Recall answers the question: \"Out of all the instances that are actually positive, how many were correctly predicted to be positive?\"\n\nTo illustrate the difference:\n\n- High precision means that most of the positive predictions were correct, but it doesn't guarantee that all actual positive instances were caught.\n- High recall means that most of the actual positive instances were caught, but it doesn't guarantee that the predictions were accurate (there could be a lot of false positives).\n\nFor example, in a medical test for a disease:\n- High precision means that most people who tested positive actually have the disease, but some people with the disease might have been missed.\n- High recall means that most people who have the disease tested positive, but some people without the disease might have been incorrectly told they have it.\n\nThe balance between precision and recall depends on the specific problem and its requirements. In some cases, it's more important to have high precision to avoid false alarms, while in others, high recall is crucial to ensure that as many actual cases as possible are identified. The F1 score is often used as a measure that balances both precision and recall.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 34,
+      "question": "Šta je hash funkcija?",
+      "gold_answer": "Hash funkcija mapira ulazne podatke proizvoljne dužine u izlaz fiksne dužine.",
+      "evidence": "Hash function definition",
+      "model_answer": "Hash funkcija je matematička funkcija koja uzima ulazni podatak (niz znakova, broj, ili drugi tip podatka) i generiše fiksnog dužine izlazni niz znakova, poznat kao hash vrednost ili digest. Ova funkcija ima nekoliko ključnih svojstava:\n\n1. **Determinizam**: Za dati ulaz, hash funkcija uvijek generiše istu hash vrednost.\n2. **Brzina**: Hash funkcije su dizajnirane da budu brze i efikasne u izračunavanju.\n3. **Nije-invertibilnost**: Teško je ili nemoguće izračunati originalni ulazni podatak iz njegove hash vrednosti.\n4. **Nizak rizik kolizije**: Vrijedno je da hash funkcija minimizira rizik da dva različita ulazna podatka proizvode istu hash vrednost (koliziju).\n\nHash funkcije se koriste u raznim oblastima, kao što su:\n\n* **Kriptografija**: Za zaštitu podataka i autentifikaciju.\n* **Baze podataka**: Za indeksiranje i brzo pretraživanje podataka.\n* **Verifikacija integriteta**: Za provjeru da li je podatak izmijenjen ili oštećen tokom prenosa ili skladištenja.\n\nPrimjeri hash funkcija uključuju MD5, SHA-1, SHA-256, itd.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 35,
+      "question": "What is the Pythagorean theorem?",
+      "gold_answer": "The Pythagorean theorem states that in a right triangle, a² + b² = c².",
+      "evidence": "Pythagorean theorem definition",
+      "model_answer": "The Pythagorean theorem is a mathematical concept that describes the relationship between the lengths of the sides of a right-angled triangle. It states that the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides. The formula for the Pythagorean theorem is: a² + b² = c², where a and b are the lengths of the two sides that form the right angle, and c is the length of the hypotenuse.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 36,
+      "question": "Which company developed FAISS?",
+      "gold_answer": "FAISS was developed by Meta AI (formerly Facebook AI Research).",
+      "evidence": "FAISS official documentation",
+      "model_answer": "FAISS (Facebook AI Similarity Search) was developed by Facebook (now known as Meta).",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 37,
+      "question": "Šta je latentni prostor u dubokom učenju?",
+      "gold_answer": "Latentni prostor je apstraktna reprezentacija podataka u nižedimenzionalnom prostoru.",
+      "evidence": "Latent space definition",
+      "model_answer": "Latentni prostor u dubokom učenju odnosi se na apstraktni, nižedimenzionalni prostor u kojem se podaci mogu predstaviti nakon što su prošli kroz neki oblik transformacije ili kodiranja. Ova transformacija se obično postiže pomoću neuronskih mreža, posebno autoenkodera, koji su dizajnirani da izvuku relevantne karakteristike iz ulaznih podataka i predstave ih u kompaktnijem, latentnom prostoru.\n\nU ovom prostoru, dimenzionalnost podataka je smanjena u odnosu na originalne podatke, što omogućava lakšu manipulaciju i analizu. Latentni prostor često sadrži informacije koje su bitne za određenu zadatu ili problem, kao što je klasifikacija slika ili generiranje novih podataka.\n\nKljučne karakteristike latentnog prostora uključuju:\n\n1. **Niža dimenzionalnost**: Latentni prostor ima manji broj dimenzija u odnosu na originalne podatke, što olakšava rad sa njima.\n2. **Apstrakcija**: Informacije u latentnom prostoru su apstrahirane, što znači da su irelevantni detalji izbačeni, a zadržane su samo bitne karakteristike.\n3. **Reprezentacija**: Latentni prostor pruža kompaktniju i efikasniju reprezentaciju originalnih podataka, što je korisno za učenje i generalizaciju.\n\nUpotreba latentnog prostora je široko rasprostranjena u različitim oblastima dubokog učenja, kao što su generativni modeli, dimenzionalna redukcija i semanticki search.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 38,
+      "question": "What does GPU stand for?",
+      "gold_answer": "GPU stands for Graphics Processing Unit.",
+      "evidence": "GPU definition",
+      "model_answer": "GPU stands for Graphics Processing Unit.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 39,
+      "question": "Šta je diferencijalna jednačina?",
+      "gold_answer": "Diferencijalna jednačina je jednačina koja uključuje funkciju i njene izvode.",
+      "evidence": "Differential equation definition",
+      "model_answer": "Diferencijalna jednačina je matematička jednačina koja sadrži nepoznatu funkciju i njene izvode. Ona opisuje odnos između funkcije i njenih izvoda, a koristi se za modeliranje i rešavanje problema u raznim oblastima, kao što su fizika, inženjerstvo, ekonomija i drugim. Diferencijalne jednačine mogu biti obične (OĐJ) ili parcijalne (PDJ), u zavisnosti od toga da li funkcija zavisi od jedne ili više promenljivih.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 40,
+      "question": "What is the speed of light in vacuum?",
+      "gold_answer": "The speed of light in vacuum is approximately 299,792,458 meters per second.",
+      "evidence": "Physics constant definition",
+      "model_answer": "The speed of light in vacuum is approximately 299,792,458 meters per second (m/s).",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 41,
+      "question": "Who invented the Python programming language?",
+      "gold_answer": "Python was created by Guido van Rossum.",
+      "evidence": "Python history",
+      "model_answer": "Guido van Rossum invented the Python programming language.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 42,
+      "question": "Šta je matrica?",
+      "gold_answer": "Matrica je pravougaona tabela brojeva organizovanih u redove i kolone.",
+      "evidence": "Matrix definition",
+      "model_answer": "Matrica je u matematici pravougaona tabela brojeva, simbola ili izraza, raspoređenih u redove i kolone. Ona se sastoji od elemenata koji su organizovani u određenom poretku, pri čemu se svaki element identifikuje sa svojim rednim brojem i brojem kolone. Matrice se koriste za predstavljanje i obrađivanje velikih količina podataka, kao i za rešavanje sistema linearnih jednačina, te za izvođenje različitih matematičkih operacija.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 43,
+      "question": "What is the difference between AI and machine learning?",
+      "gold_answer": "AI is a broad field of creating intelligent systems, while machine learning is a subset focused on learning from data.",
+      "evidence": "AI vs ML explanation",
+      "model_answer": "AI (Artificial Intelligence) and machine learning are related but not exactly the same thing.\n\nArtificial Intelligence (AI) refers to the broader field of research and development aimed at creating machines that can perform tasks that typically require human intelligence, such as reasoning, problem-solving, perception, and learning.\n\nMachine Learning (ML), on the other hand, is a subset of AI that involves the use of algorithms and statistical models to enable machines to learn from data, without being explicitly programmed. In other words, machine learning is a type of AI that allows systems to improve their performance on a task over time, based on the data they receive.\n\nTo illustrate the difference:\n\n* AI is the overall goal of creating intelligent machines that can think and act like humans.\n* Machine learning is a specific approach to achieving that goal, by using data-driven methods to enable machines to learn and improve their performance.\n\nSo, all machine learning is AI, but not all AI is machine learning.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 44,
+      "question": "Šta je logaritamska funkcija?",
+      "gold_answer": "Logaritamska funkcija je inverzna funkcija eksponencijalne funkcije.",
+      "evidence": "Logarithmic function definition",
+      "model_answer": "Logaritamska funkcija je matematička funkcija koja vraća eksponent na koji treba podignuti bazu (broj veći od 1) da bi se dobio dati broj. Drugim riječima, logaritamska funkcija je inverzna funkcija eksponencijalne funkcije.\n\nNa primjer, ako je 2^3 = 8, tada je log2(8) = 3, jer 2 treba podignuti na 3 da bi se dobio 8.\n\nLogaritamske funkcije se koriste u mnogim matematičkim i naučnim oblastima, kao što su algebra, geometrija, fizika, inženjerstvo i ekonomija. One se koriste za rješavanje jednačina, analizu podataka i modeliranje realnih pojava.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 45,
+      "question": "What is quantum computing?",
+      "gold_answer": "Quantum computing uses principles of quantum mechanics such as superposition and entanglement to process information.",
+      "evidence": "Quantum computing definition",
+      "model_answer": "Quantum computing is a type of computing that uses the principles of quantum mechanics to perform calculations and operations on data. It's a new paradigm for computing that's different from classical computing, which uses bits (0s and 1s) to process information.\n\nIn quantum computing, information is represented by quantum bits or qubits, which can exist in multiple states simultaneously, allowing for much faster and more complex calculations. Quantum computers have the potential to solve certain problems that are too complex or time-consuming for classical computers, such as simulating complex systems, factoring large numbers, and optimizing complex processes.\n\nQuantum computing has many potential applications, including cryptography, optimization, and simulation, and is being explored by researchers and companies around the world. However, it's still a relatively new and developing field, and many technical challenges need to be overcome before quantum computing can be widely adopted.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 46,
+      "question": "Šta je diferencija između IPv4 i IPv6?",
+      "gold_answer": "IPv4 koristi 32-bitne adrese, dok IPv6 koristi 128-bitne adrese.",
+      "evidence": "IPv4 vs IPv6 explanation",
+      "model_answer": "IPv4 (Internet Protocol verzija 4) i IPv6 (Internet Protocol verzija 6) su dva različita verzija internetskog protokola koji se koriste za komunikaciju između uređaja na internetu.\n\nGlavne razlike između IPv4 i IPv6 su:\n\n1. **Adresni prostor**: IPv4 koristi 32-bitne adrese, što znači da postoji ograničen broj jedinstvenih adresa (oko 4,3 milijarde). IPv6, s druge strane, koristi 128-bitne adrese, što omogućava mnogo veći broj jedinstvenih adresa (oko 3,4 x 10^38).\n2. **Adresna struktura**: IPv4 adrese se sastoje od četiri broja odvojenih tačkama (npr. 192.0.2.1), dok IPv6 adrese koriste heksadecimalni format i sastoje se od osam grupa od po četiri heksadecimalna broja odvojenih dvotačkama (npr. 2001:0db8:85a3:0000:0000:8a2e:0370:7334).\n3. **Sigurnost**: IPv6 ima ugrađenu podršku za sigurnosne protokole kao što je IPsec, koji omogućava šifriranje i autentifikaciju podataka. IPv4 također podržava IPsec, ali nije ugrađen u protokol.\n4. **Mobilnost**: IPv6 ima bolju podršku za mobilnost, što omogućava uređajima da se lakše premještaju između različitih mreža bez gubitka konekcije.\n5. **Kvalitet usluge**: IPv6 ima bolju podršku za kvalitet usluge (QoS), što omogućava prioritetizaciju različitih vrsta saobraćaja na internetu.\n\nUkratko, IPv6 je novija verzija internetskog protokola koja nudi veći adresni prostor, bolju sigurnost, mobilnost i kvalitet usluge u odnosu na IPv4.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 47,
+      "question": "What is backpropagation?",
+      "gold_answer": "Backpropagation is an algorithm used to train neural networks by propagating error backward to update weights.",
+      "evidence": "Backpropagation definition",
+      "model_answer": "Backpropagation is an essential algorithm in machine learning and neural networks. It is a method used to train artificial neural networks by minimizing the error between the network's predictions and the actual outputs. The goal of backpropagation is to adjust the model's parameters, such as weights and biases, to reduce the difference between predicted and actual outputs.\n\nHere's a simplified overview of the backpropagation process:\n\n1. **Forward pass**: The network processes the input data and produces an output.\n2. **Error calculation**: The difference between the predicted output and the actual output is calculated, typically using a loss function such as mean squared error or cross-entropy.\n3. **Backward pass**: The error is propagated backwards through the network, adjusting the weights and biases at each layer to minimize the loss.\n4. **Weight update**: The weights and biases are updated based on the calculated errors and the learning rate, which controls how quickly the network learns.\n\nBackpropagation is a key component of many neural network architectures, including feedforward networks, convolutional neural networks (CNNs), and recurrent neural networks (RNNs). It allows these networks to learn from data and improve their performance over time.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 48,
+      "question": "Šta je heuristika?",
+      "gold_answer": "Heuristika je pristup rešavanju problema koji koristi praktične metode za brže pronalaženje rešenja.",
+      "evidence": "Heuristic definition",
+      "model_answer": "Heuristika je naučna disciplina koja se bavi proučavanjem metoda i tehnika za pronalaženje rešenja problema, često koristeći kratke i efikasne procedure, kao i intuitivno i logično razmišljanje. Heuristika se koristi u raznim oblastima, kao što su matematika, računarstvo, psihologija i filozofija, za razvoj efikasnih algoritama i strategija za rešavanje kompleksnih problema.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 49,
+      "question": "What is the difference between RAM and ROM?",
+      "gold_answer": "RAM is volatile memory used for temporary storage, while ROM is non-volatile memory used for permanent storage.",
+      "evidence": "RAM vs ROM explanation",
+      "model_answer": "The main difference between RAM (Random Access Memory) and ROM (Read-Only Memory) is the way data is stored and accessed.\n\nRAM is a type of volatile memory, which means that its contents are lost when the power is turned off. It is used to store data that the computer is currently using or processing, and its contents can be changed or modified quickly.\n\nROM, on the other hand, is a type of non-volatile memory, which means that its contents are retained even when the power is turned off. It is used to store permanent or semi-permanent data, such as firmware or software, that does not need to be changed frequently. The data in ROM can only be read, not written or modified, hence the name \"Read-Only Memory\".\n\nIn summary, the key differences between RAM and ROM are:\n\n* Volatility: RAM is volatile, while ROM is non-volatile.\n* Data modification: RAM can be written and modified, while ROM can only be read.\n* Purpose: RAM is used for temporary storage of data, while ROM is used for permanent storage of data.",
+      "retrieved_docs": [],
+      "error": null
+    },
+    {
+      "id": 50,
+      "question": "Šta je LLM (Large Language Model)?",
+      "gold_answer": "LLM je veliki jezički model treniran na ogromnim količinama tekstualnih podataka za generisanje i razumevanje jezika.",
+      "evidence": "LLM definition",
+      "model_answer": "LLM (Large Language Model) je veliki jezički model koji je dizajniran da procesuje i generiše ljudski jezik. To je vrsta umjetne inteligencije koja koristi duboke učenje algoritme za analizu i razumevanje velikih količina tekstualnih podataka.\n\nLLM-ovi su obučeni na ogromnim količinama tekstualnih podataka, kao što su knjige, članci, web stranice i druge vrste tekstova. Tokom obuke, model uči da prepozna obrasce, odnose i strukturu jezika, što mu omogućava da generiše koherentan i prirodan jezik.\n\nLLM-ovi mogu biti korisni u raznim aplikacijama, kao što su:\n\n* Prevođenje jezika\n* Generisanje teksta\n* Odgovaranje na pitanja\n* Sumariziranje teksta\n* Analiza sentimenta\n\nNeki od najpoznatijih LLM-ova su BERT, RoBERTa, XLNet i dr.\n\nNadam se da sam dao jasno i tačno odgovor!",
+      "retrieved_docs": [],
+      "error": null
+    }
+  ]
+}

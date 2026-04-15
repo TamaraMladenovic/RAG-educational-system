@@ -121,10 +121,10 @@ def so_fetch_qna(
 
         url = q.get("link") or f"https://stackoverflow.com/questions/{qid}"
         meta = {
-            "type": "stack_overflow",
+            "source_type": "stackoverflow",
+            "source": "stackoverflow",
             "title": title,
             "url": url,
-            "site": "stack_overflow",
             "fetched_at": int(time.time()),
         }
         docs.append(Document(page_content=combined, metadata=meta))
