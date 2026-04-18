@@ -151,7 +151,6 @@ class RAGPipeline:
         if live_docs:
             live_chunks = chunk_documents(live_docs)
 
-        # uzmi samo 2 live chunka, ali neka budu "najkorisniji" (wiki + gcs)
         preferred_live_sources = {"gcs"}
         filtered_live_chunks: List[Document] = []
         for ch in live_chunks:
@@ -163,11 +162,10 @@ class RAGPipeline:
         # ---- FAISS ----
         faiss_results = self.retrieve_context(query, top_k=top_k)
 
-        # 🔥 POST-RETRIEVAL RERANK (tvoj keyword_overlap)
         faiss_results = filter_by_keyword_overlap(
             query,
             faiss_results,
-            min_overlap=2,  # posle testiranja možeš 2
+            min_overlap=2, 
         )
 
         # ---- BUILD CHUNK DICTS (za prompt) ----
@@ -222,7 +220,7 @@ class RAGPipeline:
 
         return {
             "query": query,
-
+            "live_results": live_results,
             "retrieved_chunks": [
                 {
                     "doc_id": doc.doc_id,
